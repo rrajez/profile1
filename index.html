@@ -1,57 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rajesh R - Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rajesh R | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav>
-        <div class="logo">Rajesh R</div>
-        <div class="nav-links">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <button class="theme-toggle">🌙</button>
-        </div>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Rajesh <span>R</span></div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+      </ul>
     </nav>
+  </header>
 
-    <div class="hero-section">
-        <h1>Hi, I'm Rajesh R</h1>
-        <h2>Backend Developer</h2>
-        <p class="description">
-            Passionate Software Developer at Amazon Development Centre<br>
-            with expertise in backend development and scalable solutions.<br>
-            Creating innovative software with 98% efficiency and 25% performance improvements.
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <div class="text">
+        <h1>Hi, I'm <span>Rajesh R</span></h1>
+        <h3>Backend S</h3>
+        <p>
+          Passionate Software Developer at Amazon Development Centre<br />
+          with expertise in backend development and scalable solutions.<br />
+          Creating innovative software with <span class="highlight">98% efficiency</span>
+          and <span class="highlight">25% performance improvements</span>.
         </p>
-        
-        <div class="social-links">
-            <a href="#">Connect on LinkedIn</a>
-            <a href="#">Connect on GitHub</a>
-            <a href="#">Connect on LeetCode</a>
-            <a href="#">Download Resume</a>
+        <div class="buttons">
+          <a href="#" class="btn">Connect on LinkedIn</a>
+          <a href="#" class="btn">Connect on GitHub</a>
+          <a href="#" class="btn">Connect on LeetCode</a>
         </div>
+        <a href="#" class="resume-btn">Download Resume</a>
+      </div>
+      <div class="profile-pic">
+        <img src="your-image.png" alt="Rajesh R" />
+      </div>
     </div>
+  </section>
 
-    <section class="featured-projects">
-        <h2>Featured Projects</h2>
-        <p>A showcase of my recent work demonstrating expertise in full-stack development, API design, and system architecture.</p>
-        
-        <div class="project-card">
-            <h3>E-commerce Platform</h3>
-            <p>Full-stack e-commerce solution with microservices architecture, built with Spring Boot and React.</p>
-            <div class="tech-stack">
-                <span>Java</span>
-                <span>Spring Boot</span>
-                <span>React</span>
-                <span>MySQL</span>
-            </div>
-            <div class="button-group">
-                <a href="#">Code</a>
-                <a href="#">Demo</a>
-            </div>
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>
+      Passionate Data Associate with experience in backend development, data
+      processing, and system optimization at Amazon Development Centre.
+    </p>
+    <div class="about-content">
+      <div class="journey">
+        <h3>Professional Journey</h3>
+        <ul>
+          <li><strong>Data Associate</strong> - Amazon Development Centre (2021 - Present)</li>
+          <li><strong>Junior Data Associate</strong> - Amazon Development Centre (2019 - 2021)</li>
+        </ul>
+      </div>
+      <div class="skills">
+        <h3>Technical Skills</h3>
+        <ul>
+          <li>Java - ⭐⭐⭐⭐⭐</li>
+          <li>Python - ⭐⭐⭐⭐</li>
+          <li>Spring Boot - ⭐⭐⭐⭐</li>
+          <li>MySQL - ⭐⭐⭐⭐</li>
+          <li>JavaScript - ⭐⭐⭐</li>
+          <li>HTML/CSS - ⭐⭐⭐</li>
+        </ul>
+      </div>
+      <div class="achievements">
+        <h3>Key Achievements</h3>
+        <ul>
+          <li>💡 98% Efficiency - in data processing systems</li>
+          <li>⚙️ 25% Improvement - in processing time</li>
+          <li>🤝 Team Collaboration - on critical projects</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="projects">
+    <h2>Featured Projects</h2>
+    <div class="project-cards">
+      <div class="card">
+        <h3>E-commerce Platform</h3>
+        <p>Full-stack e-commerce solution built with Spring Boot and React.</p>
+        <ul>
+          <li>Microservices Architecture</li>
+          <li>Payment Gateway</li>
+          <li>Real-time Inventory</li>
+          <li>Admin Dashboard</li>
+        </ul>
+        <p>Tech: Java, Spring Boot, React, MySQL, Docker</p>
+        <div class="buttons">
+          <a href="#" class="btn">Code</a>
+          <a href="#" class="btn">Demo</a>
         </div>
-    </section>
+      </div>
+      <div class="card">
+        <h3>Weather App API</h3>
+        <p>RESTful API with real-time weather data, caching, and rate-limiting.</p>
+        <ul>
+          <li>Real-time Data</li>
+          <li>Caching Layer</li>
+          <li>Rate Limiting</li>
+          <li>Multiple Providers</li>
+        </ul>
+        <p>Tech: Python, FastAPI, Redis, PostgreSQL, Docker</p>
+        <div class="buttons">
+          <a href="#" class="btn">Code</a>
+          <a href="#" class="btn">Demo</a>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Registration System</h3>
+        <p>Role-based user system with email verification and admin dashboard.</p>
+        <ul>
+          <li>Email Verification</li>
+          <li>Role-based Access</li>
+          <li>Admin Panel</li>
+          <li>Security Features</li>
+        </ul>
+        <p>Tech: Java, Spring Security, MySQL, JavaScript, Bootstrap</p>
+        <div class="buttons">
+          <a href="#" class="btn">Code</a>
+          <a href="#" class="btn">Demo</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Interested in working together? <a href="#">Get In Touch</a></p>
+  </footer>
 </body>
 </html>
